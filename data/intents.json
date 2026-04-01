@@ -1,0 +1,219 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "xin chào",
+                "chào bạn",
+                "hello",
+                "hi",
+                "alo",
+                "bạn ơi",
+                "chào chatbot",
+                "cho mình hỏi"
+            ],
+            "responses": [
+                "Chào bạn, mình có thể hỗ trợ các câu hỏi về học AI, Python và machine learning.",
+                "Mình đây. Bạn cứ hỏi về AI, Python, model hoặc project.",
+                "Chào bạn. Gửi câu hỏi đi."
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "tạm biệt",
+                "bye",
+                "hẹn gặp lại",
+                "chào tạm biệt",
+                "mình đi đây",
+                "kết thúc nhé",
+                "thoát",
+                "stop"
+            ],
+            "responses": [
+                "Tạm biệt bạn. Khi cần học tiếp AI thì quay lại.",
+                "Hẹn gặp lại.",
+                "Tạm biệt. Chúc bạn train model ổn."
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "cảm ơn",
+                "thank you",
+                "thanks",
+                "cảm ơn bạn",
+                "ok cảm ơn",
+                "cảm ơn nhiều",
+                "hay quá cảm ơn",
+                "rõ rồi cảm ơn"
+            ],
+            "responses": [
+                "Không có gì.",
+                "Ổn. Cứ tiếp tục hỏi.",
+                "Được rồi, sang câu tiếp theo."
+            ]
+        },
+        {
+            "tag": "ask_name",
+            "patterns": [
+                "bạn tên gì",
+                "tên của bạn là gì",
+                "chatbot tên gì",
+                "gọi bạn là gì",
+                "bạn là ai",
+                "giới thiệu đi",
+                "tự giới thiệu"
+            ],
+            "responses": [
+                "Mình là chatbot AI tự train từ đầu bằng PyTorch.",
+                "Mình là chatbot hỏi đáp đơn giản, không dùng model có sẵn.",
+                "Mình là chatbot intent-based tự xây từ đầu."
+            ]
+        },
+        {
+            "tag": "ask_ai_roadmap",
+            "patterns": [
+                "học ai bắt đầu từ đâu",
+                "lộ trình học ai",
+                "muốn học ai thì học gì trước",
+                "roadmap học machine learning",
+                "nên học gì để làm ai",
+                "học ai từ đầu như thế nào",
+                "bắt đầu học machine learning ra sao",
+                "muốn theo ai thì cần gì"
+            ],
+            "responses": [
+                "Lộ trình ngắn gọn: Python, toán cơ bản, xử lý dữ liệu, machine learning, deep learning, rồi làm project thực tế.",
+                "Bạn nên bắt đầu bằng Python và tư duy xử lý dữ liệu, sau đó sang machine learning trước khi học deep learning.",
+                "Thứ tự hợp lý là: Python, NumPy/Pandas, ML cơ bản, neural network, rồi project thực chiến."
+            ]
+        },
+        {
+            "tag": "ask_python",
+            "patterns": [
+                "python có quan trọng không",
+                "có cần học python không",
+                "học ai có cần python không",
+                "python dùng để làm gì trong ai",
+                "python quan trọng thế nào",
+                "muốn học machine learning có cần python",
+                "python có bắt buộc không",
+                "nên học python trước à"
+            ],
+            "responses": [
+                "Có. Python gần như là ngôn ngữ mặc định trong AI vì hệ sinh thái thư viện rất mạnh.",
+                "Nếu học AI nghiêm túc thì Python gần như bắt buộc ở giai đoạn đầu.",
+                "Python rất quan trọng vì bạn sẽ dùng nó cho tiền xử lý dữ liệu, train model và đánh giá model."
+            ]
+        },
+        {
+            "tag": "ask_ml_dl_diff",
+            "patterns": [
+                "machine learning khác deep learning thế nào",
+                "ml và dl khác nhau ra sao",
+                "phân biệt machine learning với deep learning",
+                "deep learning có phải machine learning không",
+                "ml dl khác gì nhau",
+                "so sánh machine learning và deep learning",
+                "khác biệt giữa ml và dl",
+                "machine learning với deep learning là một à"
+            ],
+            "responses": [
+                "Deep learning là một nhánh của machine learning, thường dùng neural network nhiều tầng và cần nhiều dữ liệu hơn.",
+                "Machine learning bao quát hơn, còn deep learning tập trung vào mạng nơ-ron sâu.",
+                "Khác biệt chính là mức độ tự trích xuất đặc trưng, độ phức tạp model và nhu cầu dữ liệu."
+            ]
+        },
+        {
+            "tag": "ask_overfitting",
+            "patterns": [
+                "overfitting là gì",
+                "giải thích overfitting",
+                "tại sao model bị overfitting",
+                "overfit nghĩa là gì",
+                "model học quá mức là gì",
+                "làm sao biết bị overfitting",
+                "overfitting xảy ra khi nào",
+                "quá khớp là gì"
+            ],
+            "responses": [
+                "Overfitting là khi model học quá kỹ dữ liệu train nên dự đoán tốt trên train nhưng kém trên dữ liệu mới.",
+                "Nếu train accuracy rất cao nhưng validation accuracy thấp thì thường là dấu hiệu overfitting.",
+                "Cách giảm overfitting gồm thêm dữ liệu, regularization, dropout, early stopping hoặc đơn giản hóa model."
+            ]
+        },
+        {
+            "tag": "ask_project_idea",
+            "patterns": [
+                "gợi ý project ai",
+                "nên làm project ai nào",
+                "cho mình ý tưởng dự án ai",
+                "project machine learning cho người mới",
+                "bài toán ai dễ làm",
+                "nên làm chatbot hay phân loại ảnh",
+                "gợi ý đồ án ai",
+                "đề xuất project ai thực tế"
+            ],
+            "responses": [
+                "Bạn có thể bắt đầu với chatbot intent classification, spam detection, sentiment analysis hoặc dự đoán giá nhà.",
+                "Project tốt cho người mới là chatbot hỏi đáp theo intent vì dễ train, dễ hiểu và dễ demo.",
+                "Muốn thực tế hơn thì làm chatbot hỏi đáp tài liệu hoặc phân loại ticket hỗ trợ."
+            ]
+        },
+        {
+            "tag": "ask_model_training",
+            "patterns": [
+                "train model như thế nào",
+                "quy trình train model ra sao",
+                "các bước huấn luyện model",
+                "làm sao để train chatbot",
+                "huấn luyện mô hình như thế nào",
+                "train neural network bắt đầu từ đâu",
+                "training pipeline là gì",
+                "muốn train model từ đầu"
+            ],
+            "responses": [
+                "Quy trình cơ bản là: chuẩn bị dữ liệu, tokenize, tạo vocab, encode, chia train validation, train, đánh giá, lưu model.",
+                "Để train chatbot từ đầu, bạn cần dữ liệu câu hỏi và nhãn intent, sau đó huấn luyện model phân loại.",
+                "Pipeline tối thiểu gồm data preprocessing, training loop, validation loop và inference."
+            ]
+        },
+        {
+            "tag": "ask_deploy",
+            "patterns": [
+                "deploy chatbot như thế nào",
+                "đưa chatbot lên web ra sao",
+                "làm api cho chatbot",
+                "chatbot có thể chạy web không",
+                "triển khai chatbot",
+                "serve model như thế nào",
+                "làm backend cho chatbot",
+                "đưa model vào api"
+            ],
+            "responses": [
+                "Cách đơn giản nhất là đóng gói model vào FastAPI rồi frontend gọi HTTP API.",
+                "Bạn có thể train model xong rồi load model trong FastAPI để phục vụ câu trả lời realtime.",
+                "Khi deploy, nên tách riêng bước train và bước inference."
+            ]
+        },
+        {
+            "tag": "ask_spring_boot",
+            "patterns": [
+                "spring boot là gì",
+                "giải thích spring boot",
+                "spring boot dùng để làm gì",
+                "học spring boot để làm gì",
+                "spring boot là framework gì",
+                "java spring boot là gì",
+                "spring boot hoạt động như thế nào",
+                "khi nào nên dùng spring boot"
+            ],
+            "responses": [
+                "Spring Boot là framework của hệ sinh thái Spring, giúp xây dựng ứng dụng Java nhanh hơn bằng cách giảm cấu hình thủ công.",
+                "Spring Boot thường dùng để phát triển REST API, web app và microservices với Java.",
+                "Điểm mạnh của Spring Boot là auto-configuration, starter dependencies và khả năng build ứng dụng production-ready nhanh."
+            ]
+        }
+    ]
+}
